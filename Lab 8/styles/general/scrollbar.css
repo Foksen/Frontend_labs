@@ -1,0 +1,14 @@
+@import url(colors.css);
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gray-800);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray-700);
+    z-index: -1;
+}

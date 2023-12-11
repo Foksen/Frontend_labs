@@ -1,0 +1,95 @@
+@import url(general/general.css);
+
+.card-type2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: var(--gray-700);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000067;
+    transition: transform 0.2s, filter 0.4s;
+}
+
+.card-type2:hover {
+    transform: scale(1.05);
+}
+
+#card-container-2:hover .card-type2:not(:hover) {
+    filter: blur(2px);
+}
+
+.card-type2-number {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 10px;
+    width: 100%;
+    height: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-type2-number::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 160px;
+    background: red;
+    border-radius: 0 0 100% 100%;
+    z-index: -1;
+}
+
+.card-type2-desc {
+    margin: 0 20px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.card-type2-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 8px 20px;
+    font-weight: 600;
+    color: var(--white-color);
+    background: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: filter 0.15s, scale 0.15s;
+}
+
+.card-type2-btn:hover {
+    filter: brightness(0.93);
+}
+
+.card-type2-btn:active {
+    filter: brightness(0.86);
+    transform: scale(0.98);
+}
+
+#card-type2-1 .card-type2-number::before, #card-type2-1 .card-type2-btn {
+    background: var(--main-color);
+}
+
+#card-type2-2 .card-type2-number::before, #card-type2-2 .card-type2-btn {
+    background: var(--green-color);
+}
+
+#card-type2-3 .card-type2-number::before, #card-type2-3 .card-type2-btn {
+    background: var(--pink-color);
+}

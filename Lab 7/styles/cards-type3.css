@@ -1,0 +1,123 @@
+@import url(general/general.css);
+
+.card-type3 {
+    position: relative;
+    padding: 2px;
+    width: 300px;
+    height: 400px;
+    filter: brightness(0.9);
+    transition: filter 0.2s;
+    overflow: hidden;
+    --default-rotate: 35deg;
+}
+
+.card-type3:hover {
+    filter: brightness(1);
+}
+
+#card-container-3:hover .card-type3:not(:hover) {
+    filter: brightness(0.6);
+}
+
+@keyframes card-type3-before {
+    0% {
+        rotate: var(--default-rotate);
+    }
+    50% {
+        rotate: calc(var(--default-rotate) + 180deg);
+    }
+    100% {
+        rotate: calc(var(--default-rotate) + 360deg);
+    }
+}
+
+.card-type3::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 25%;
+    width: 50%;
+    height: 150%;
+    background: linear-gradient(90deg, rgba(46,70,209,0) 0%, rgba(46,70,209,0.75) 25%, rgba(46,70,209,1) 50%, rgba(46,70,209,1) 100%);
+    z-index: -1;
+    transition: visibility 0.2s, opacity 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    rotate: var(--default-rotate);
+}
+
+.card-type3:hover::before {
+    visibility: visible;
+    opacity: 1;
+    animation-name: card-type3-before;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-type3-content {
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    background: rgb(40,34,45);
+    background: linear-gradient(90deg, rgba(40,34,45,1) 0%, rgba(40,34,45,1) 50%, rgba(30,25,34,1) 50%, rgba(30,25,34,1) 100%);
+}
+
+.card-type3-number {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    color: rgba(40,34,45,1);
+    font-size: 100px;
+    font-weight: 700;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 1;
+}
+
+.card-type3:hover .card-type3-number {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-type3-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: var(--white-color);
+    z-index: 10;
+}
+
+.card-type3-desc {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: var(--white-color);
+    text-align: center;
+    z-index: 10;
+}
+
+.card-type3-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-color);
+    border: none;
+    background: var(--blue-color);
+    transition: filter 0.2s, transform 0.2s;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card-type3-btn:hover {
+    filter: brightness(0.93);
+}
+
+.card-type3-btn:active {
+    filter: brightness(0.86);
+    transform: scale(0.98);
+}

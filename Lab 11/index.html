@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="section section-shop">
+
+            <h2 class="section-title">Магазин</h2>
+
+            <div class="shop-filter">
+                <p class="shop-filter-title">Цена товара</p>
+                <div class="shop-filter-group">
+                    <input type="number" min="0" max="999999999" value="0" placeholder="Мин" class="shop-filter-input" id="input-price-min" name="input-price-min">
+                    <input type="number" min="0" max="999999999" value="999999999" placeholder="Макс" class="shop-filter-input" id="input-price-max" name="input-price-max">
+                </div>
+            </div>
+
+            <div class="shop-filter">
+                <p class="shop-filter-title">Сортировать по</p>
+                <select name="select-sort" id="select-sort" class="shop-filter-select">
+                    <option value="no">По умолчанию</option>
+                    <option value="down">Цене (по убыванию)</option>
+                    <option value="up">Цене (по возрастанию)</option>
+                </select>
+            </div>
+            
+            <div class="prod-cards-grid" id="prod-cards-grid">
+                <!--<article class="prod-card">
+                    <img src="images/laptop.png" alt="Изображение товара" class="prod-img">
+                    <h5 class="prod-name">Ноутбук</h5>
+                    <div class="prod-bottom-container">
+                        <span class="prod-price">42.990 ₽</span>
+                        <button class="prod-button">Купить</button>
+                    </div>
+                </article>-->
+            </div>
+        </section>
+        
+        <section class="section section-basket">
+            <h2 class="section-title">Корзина</h2>
+
+            <div class="bought-container" id="basket-container">
+                <!--<div class="bought-card">
+                    <img src="images/laptop.png" alt="" class="bought-img">
+                    <h5 class="bought-name">Ноутбук</h5>
+                    <span class="bought-price">42.990 ₽</span>
+                    <button class="bought-button">
+                        <img src="images/icons/trash.svg" alt="Удалить" class="bought-button-icon">
+                    </button>
+                </div>-->
+            </div>
+
+            <p class="basket-sum" id="basket-sum">Итого: 0 ₽</p>
+
+            <div class="basket-buttons-container">
+                <button class="basket-button" id="basket-btn-clear">Очистить</button>
+                <button class="basket-button" id="basket-btn-buy">Купить</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

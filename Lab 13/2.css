@@ -1,0 +1,174 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F7FC;
+}
+
+.hidden {
+    display: none;
+}
+
+.nots {
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+}
+
+.nots-content {
+    padding: 25px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0202180c;
+}
+
+.nots-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nots-list {
+    margin: 0;
+    padding: 0;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.nots-li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.nots-li:first-child {
+    margin-top: 15px;
+}
+
+.nots-li:last-child {
+    margin-bottom: 0;
+}
+
+.nots-li-close {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fab {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-color: #BFBFEA;
+    border-radius: 32px;
+    border: none;
+    box-shadow: 0 0 10px #02021833;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    z-index: 1;
+}
+
+.fab svg {
+    width: 32px;
+    height: 32px;
+    fill: #020218;
+}
+
+.fab:hover {
+    background-color: #B5B5DF;
+}
+
+.fab:active {
+    background-color: #ACACD5;
+}
+
+.nots-btn {
+    bottom: 0;
+    right: 0;   
+}
+
+.nots-btn::after {
+    content: attr(nots-count);
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: white;
+    border-radius: 16px;
+    background-color: #2B2BD0;
+}
+
+
+.create-not-btn {
+    padding-top: 2px;
+    bottom: 60px;
+    left: 80px;
+}
+
+
+.todo {
+    margin: 50px 10% 0;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0202180c;
+    transition: height 2s;
+}
+
+.todo-btn {
+    padding: 14px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #2B2BD0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.todo-btn:hover {
+    background-color: #1C1CBB;
+}
+
+.todo-btn:active {
+    background-color: #0E0EAF;
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list li {
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    font-size: 18px;
+    list-style-type: none;
+    box-shadow: 0 0 3px #02021823;
+    border-radius: 5px;
+}
+
+.todo-list li:first-child {
+    margin-top: 30px;
+}
+
+.todo-list li:last-child {
+    margin-bottom: 0;
+}

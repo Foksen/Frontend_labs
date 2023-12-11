@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.link-sn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding-right: 6px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #38f9d7;
+}
+
+.link-sn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #27272F;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.link-sn:hover::after {
+    transform: scale(0);
+}
+
+.link-sn-icon {
+    position: relative;
+    margin: 20%;
+    fill: #38f9d7;
+    z-index: 2;
+    transition: fill 0.3s;
+}
+
+.link-sn:hover .link-sn-icon {
+    fill: #27272F;
+}

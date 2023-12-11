@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи DreamWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/registration.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Dreamworks</a></li><!--
+                --><li><a>Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-container">
+            <form class="registration-form" action method="get">
+                <h2>Регистрация</h2>
+                <div class="input-container">
+                    <label for="name">Придумайте логин (5-16 символов) <b class="required">*</b></label>
+                    <input type="text"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="5"
+                        maxlength="16"
+                        placeholder="User123">
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Придумайте пароль (5-16 символов) <b class="required">*</b></label>
+                    <input type="password"
+                        id="password"
+                        name="password"
+                        required
+                        minlength="5"
+                        maxlength="16">
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Почта <b class="required">*</b></label>
+                    <input type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="adress@gmail.com">
+                </div> 
+
+                <div class="input-container">
+                    <label for="phone">Телефон <b class="required">*</b></label>
+                    <input type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        placeholder="+79001002030"
+                        pattern="\+7[0-9]{10}"
+                        required>
+                </div>
+
+                <div class="input-container">
+                    <label for="bday">Дата рождения <b class="required">*</b></label>
+                    <input type="date"
+                        id="bday"
+                        name="bday"
+                        required
+                        min="1900-01-01"
+                        max="2005-01-01">
+                </div>
+
+                <fieldset>
+                    <legend>Пол <b class="required">*</b></legend>
+                    <span class="form-line-container">
+                        <div class="input-container">
+                            <input type="radio"
+                                id="gender-male"
+                                name="gender"
+                                value="male"
+                                required>
+                            <label for="gender-male">Мужской</label>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="radio"
+                                id="gender-female"
+                                name="gender"
+                                value="female"
+                                required>
+                            <label for="gender-female">Женский</label>
+                        </div>
+                    </span>
+                </fieldset>
+
+                <div class="input-container">
+                    <label for="filmSelect">Любимый фильм</label>
+                    <select 
+                        id="filmSelect" 
+                        name="filmSelect"
+                        multiple
+                        size="5">
+                        <option value="Shrek">Шрек</option>
+                        <option value="Dragon">Как приручить дракона</option>
+                        <option value="Shrek2">Шрек 2</option>
+                        <option value="Dragon2">Как приручить дракона 2</option>
+                        <option value="Shrek3">Шрек 3</option>
+                        <option value="Dragon3">Как приручить дракона 3</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Пользовательское соглашение</legend>
+                    <div class="input-container">
+                        <input type="checkbox"
+                            id="provideData"
+                            name="provideData"
+                            required>
+                        <label for="provideData">Согласен предоставить свои личные данные для обработки <b class="required">*</b></label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="checkbox"
+                            id="recieveNews"
+                            name="recieveNews"
+                            checked="true">
+                        <label for="recieveNews">Согласен подписаться на рассылку на электронную почту</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <h4 class="footer_title">Контакты</h4>
+            Почта: <a href="mailto:izholobov2004@gmail.com" title="Отправить email">izholobov2004@gmail.com</a>
+            Телефон: <a href="tel:89535516366" title="Позвонить">+7 (953) 551-63-66</a>
+        </address>
+        <small>© Lol, letter c in a circle</small>
+    </footer>
+</body>
+</html>

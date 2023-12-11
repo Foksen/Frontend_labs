@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.section-dir {
+    margin: 100px 20%;
+}
+
+.dir-title {
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+.dir-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.dir-elem {
+    padding: 20px 15px;
+    font-size: 18px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    outline: 1px solid black;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.dir-elem.selected {
+    background-color: lightblue;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <svg id="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.25 25.78"><path id="H" class="cls-1" d="M20,35.6h-3.6V10.4H20Zm14.8-11.23H19.61V21.24H34.77Zm-.33-14H38V35.6h-3.6Z" transform="translate(-16.37 -10.11)"/><path id="E" class="cls-1" d="M56.4,32.47H71.09V35.6H52.8V10.4H70.59v3.13H56.4Zm-.32-11.2H69v3.06h-13Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M84.12,35.6V10.4H94a13.9,13.9,0,0,1,5.65,1,8,8,0,0,1,3.6,3,8.59,8.59,0,0,1,1.26,4.71,8.51,8.51,0,0,1-1.26,4.7,8.06,8.06,0,0,1-3.6,3,13.9,13.9,0,0,1-5.65,1H86.1l1.62-1.65V35.6Zm3.6-9L86.1,24.87h7.74a8,8,0,0,0,5.24-1.49,5.18,5.18,0,0,0,1.78-4.2A5.09,5.09,0,0,0,99.08,15a8,8,0,0,0-5.24-1.48H86.1l1.62-1.8Zm13.25,9-6.41-9.14h3.86l6.48,9.14Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M128.87,35.89a14.57,14.57,0,0,1-5.34-1,12.84,12.84,0,0,1-4.27-2.72,12.6,12.6,0,0,1-2.81-4.09,12.8,12.8,0,0,1-1-5.11,12.8,12.8,0,0,1,1-5.11,12.6,12.6,0,0,1,2.81-4.09,13,13,0,0,1,4.25-2.72,14.56,14.56,0,0,1,5.36-1,14.33,14.33,0,0,1,5.31,1,12.63,12.63,0,0,1,4.25,2.7,12.16,12.16,0,0,1,2.81,4.08,13.1,13.1,0,0,1,1,5.15,13.1,13.1,0,0,1-1,5.15,12.16,12.16,0,0,1-2.81,4.08,12.63,12.63,0,0,1-4.25,2.7A14.33,14.33,0,0,1,128.87,35.89Zm0-3.21a10.25,10.25,0,0,0,3.87-.72,9.17,9.17,0,0,0,3.1-2,9.55,9.55,0,0,0,2-3.08,10.39,10.39,0,0,0,0-7.7,9.55,9.55,0,0,0-2-3.08,9.17,9.17,0,0,0-3.1-2A10.84,10.84,0,0,0,125,14a9.3,9.3,0,0,0-5.19,5.11,10.39,10.39,0,0,0,0,7.7A9.3,9.3,0,0,0,125,32,10.29,10.29,0,0,0,128.87,32.68Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M154.94,35.6V10.4h10.62A15.45,15.45,0,0,1,172.67,12a11.76,11.76,0,0,1,4.78,4.43A12.54,12.54,0,0,1,179.16,23a12.54,12.54,0,0,1-1.71,6.59A11.76,11.76,0,0,1,172.67,34a15.45,15.45,0,0,1-7.11,1.58Zm3.6-3.13h6.8a11.65,11.65,0,0,0,5.42-1.19A8.62,8.62,0,0,0,174.3,28,9.59,9.59,0,0,0,175.56,23a9.56,9.56,0,0,0-1.26-5,8.71,8.71,0,0,0-3.54-3.31,11.65,11.65,0,0,0-5.42-1.19h-6.8Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M195.47,32.47h14.69V35.6H191.87V10.4h17.79v3.13H195.47Zm-.32-11.2h13v3.06h-13Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M230.54,35.89A17.42,17.42,0,0,1,225,35a11.29,11.29,0,0,1-4.14-2.29l1.33-2.81A11.62,11.62,0,0,0,225.89,32a13.33,13.33,0,0,0,4.65.83,10.37,10.37,0,0,0,3.56-.51,4.23,4.23,0,0,0,2-1.38,3.31,3.31,0,0,0,.64-2,2.75,2.75,0,0,0-.84-2.09,6.42,6.42,0,0,0-2.2-1.28,25.2,25.2,0,0,0-3-.84c-1.08-.24-2.16-.52-3.26-.85a14.56,14.56,0,0,1-3-1.24,6.07,6.07,0,0,1-2.18-2,5.92,5.92,0,0,1-.83-3.3,6.57,6.57,0,0,1,1-3.58,7.14,7.14,0,0,1,3.16-2.63,13.07,13.07,0,0,1,5.46-1,16.57,16.57,0,0,1,4.35.58,12.12,12.12,0,0,1,3.75,1.65l-1.19,2.88a11.46,11.46,0,0,0-3.42-1.56,13.11,13.11,0,0,0-3.49-.49,9.58,9.58,0,0,0-3.49.54,4.22,4.22,0,0,0-2,1.44,3.43,3.43,0,0,0-.63,2,2.77,2.77,0,0,0,.84,2.12,6.09,6.09,0,0,0,2.2,1.26,29.65,29.65,0,0,0,3,.85c1.08.25,2.17.53,3.26.84a14.09,14.09,0,0,1,3,1.23,6.08,6.08,0,0,1,2.17,2,5.73,5.73,0,0,1,.83,3.24,6.51,6.51,0,0,1-1,3.55A7.27,7.27,0,0,1,236,34.9,13.34,13.34,0,0,1,230.54,35.89Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M264,35.89a14.33,14.33,0,0,1-5.31-1,12.31,12.31,0,0,1-4.22-2.7,12.71,12.71,0,0,1-2.79-4.08,12.93,12.93,0,0,1-1-5.15,12.93,12.93,0,0,1,1-5.15,12.56,12.56,0,0,1,7-6.78,15.14,15.14,0,0,1,10.69,0,11,11,0,0,1,4.2,2.94l-2.34,2.26a9.57,9.57,0,0,0-3.24-2.25,10.12,10.12,0,0,0-3.86-.73,10.65,10.65,0,0,0-3.94.72,9.54,9.54,0,0,0-3.15,2A9.23,9.23,0,0,0,255,19.13a10.62,10.62,0,0,0,0,7.74A9.23,9.23,0,0,0,257.1,30a9.54,9.54,0,0,0,3.15,2,10.65,10.65,0,0,0,3.94.72,10.12,10.12,0,0,0,3.86-.73,9.29,9.29,0,0,0,3.24-2.29l2.34,2.27a11.2,11.2,0,0,1-4.2,3A14.2,14.2,0,0,1,264,35.89Z" transform="translate(-16.37 -10.11)"/><g id="Eye"><circle class="cls-1" cx="107.21" cy="12.45" r="1.57"/></g><g id="Eye-2" data-name="Eye"><circle class="cls-1" cx="118.09" cy="12.45" r="1.57"/></g><g id="Mask"><path class="cls-1" d="M135.78,19a2.54,2.54,0,0,1,2.16,1.32,4.3,4.3,0,0,1,0,4.64,2.54,2.54,0,0,1-2.16,1.32,2.91,2.91,0,0,1-1.55-.49,9.83,9.83,0,0,0-10.5,0,2.91,2.91,0,0,1-1.55.49A2.54,2.54,0,0,1,120,24.93a4.3,4.3,0,0,1,0-4.64A2.54,2.54,0,0,1,122.18,19a2.91,2.91,0,0,1,1.55.49,9.83,9.83,0,0,0,10.5,0,2.91,2.91,0,0,1,1.55-.49m0-2.5a5.39,5.39,0,0,0-2.89.88,7.33,7.33,0,0,1-7.82,0,5.39,5.39,0,0,0-2.89-.88,5,5,0,0,0-4.26,2.46,6.81,6.81,0,0,0,0,7.36,5,5,0,0,0,4.26,2.46,5.39,5.39,0,0,0,2.89-.88,7.33,7.33,0,0,1,7.82,0,5.39,5.39,0,0,0,2.89.88A5,5,0,0,0,140,26.29a6.81,6.81,0,0,0,0-7.36,5,5,0,0,0-4.26-2.46Z" transform="translate(-16.37 -10.11)"/></g></svg>
+    </header>
+    <main class="main">
+
+        <section class="card-section">
+            <h3 class="card-section-header">Карточки 1</h3>
+
+            <div class="card-container">
+                <div class="card-type1">
+                    <div class="card-type1-bg" style="
+                    background-color: #FF3CAC;
+                    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+                    "></div>
+                    <div class="card-type1-content">
+                        <h4 class="card-type1-title">Карточка 1</h4>
+                        <p class="card-type1-desc">Харизматическое лидерство, очевидно, интегрирует вектор. Ротор векторного поля, однако, нетривиален</p>
+                        <button class="card-type1-btn">Ладно</button>
+                    </div>
+                </div>
+                
+                <div class="card-type1">
+                    <div class="card-type1-bg" style="
+                    background-color: #FEE140;
+                    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+                    "></div>
+                    <div class="card-type1-content">
+                        <h4 class="card-type1-title">Карточка 2</h4>
+                        <p class="card-type1-desc">Тем не менее, огибающая семейства прямых ограничивает экстремум функции</p>
+                        <button class="card-type1-btn">Бывает</button>
+                    </div>
+                </div>
+
+                <div class="card-type1">
+                    <div class="card-type1-bg" style="
+                    background-color: #FA8BFF;
+                    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);                                     
+                    "></div>
+                    <div class="card-type1-content">
+                        <h4 class="card-type1-title">Карточка 3</h4>
+                        <p class="card-type1-desc">Интеграл от функции, обращающейся в бесконечность вдоль линии допускает криволинейный интеграл</p>
+                        <button class="card-type1-btn">Что?</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card-section">
+            <h3 class="card-section-header">Карточки 2</h3>
+
+            <div class="card-container" id="card-container-2">
+                <div class="card-type2" id="card-type2-1">
+                    <div class="card-type2-number">01</div>
+                    <p class="card-type2-desc">Можно считать допустимым, что жидкость концентрирует экзистенциальный элемент политического процесса, вне зависимости от предсказаний теоретической модели явления</p>
+                    <button class="card-type2-btn">Подробнее</button>
+                </div>
+
+                <div class="card-type2" id="card-type2-2">
+                    <div class="card-type2-number">02</div>
+                    <p class="card-type2-desc">Структурный голод столь же важен для жизни, как и психоанализ непоследовательно входит широколиственный лес</p>
+                    <button class="card-type2-btn">Подробнее</button>
+                </div>
+
+                <div class="card-type2" id="card-type2-3">
+                    <div class="card-type2-number">03</div>
+                    <p class="card-type2-desc">Особый вид куниц неустойчив относительно гравитационных возмущений. Газ спонтанно подрывает сублимированный эгоцентризм. Психе порождена временем</p>
+                    <button class="card-type2-btn">Подробнее</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card-section">
+            <h3 class="card-section-header">Карточки 3</h3>
+
+            <div class="card-container" id="card-container-3">
+                <div class="card-type3">
+                    <div class="card-type3-content">
+                        <div class="card-type3-number">01</div>
+                        <h5 class="card-type3-title">Карточка 1</h5>
+                        <p class="card-type3-desc">Слово отражает конкретный фактор коммуникации, не считаясь с затратами. Практика однозначно показывает, что контекстная реклама осознаёт механизм сочленений</p>
+                        <button class="card-type3-btn">Подробнее</button>
+                    </div>  
+                </div>
+
+                <div class="card-type3">
+                    <div class="card-type3-content">
+                        <div class="card-type3-number">02</div>
+                        <h5 class="card-type3-title">Карточка 2</h5>
+                        <p class="card-type3-desc">Озеро Титикака, при том, что королевские полномочия находятся в руках исполнительной власти - кабинета министров, отталкивает межатомный Бахрейн</p>
+                        <button class="card-type3-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="card-type3">
+                    <div class="card-type3-content">
+                        <div class="card-type3-number">03</div>
+                        <h5 class="card-type3-title">Карточка 3</h5>
+                        <p class="card-type3-desc">Рельеф неумеренно представляет собой пингвин, при этом его стоимость значительно ниже, чем в бутылках</p>
+                        <button class="card-type3-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="login-section">
+            <div class="particle particle-medium particle-animation-middle particle-animation1" id="particle-1"></div>
+
+            <div class="particle particle-small particle-animation-fast particle-animation2" id="particle-2"></div>
+
+            <div class="particle particle-big particle-animation-slow particle-animation1" id="particle-3"></div>
+
+            <div class="particle particle-medium particle-animation-middle particle-animation3" id="particle-4"></div>
+
+            <div class="particle particle-small particle-animation-fast particle-animation1 particle-animation-alternative" id="particle-5"></div>
+
+            <div class="particle particle-medium particle-animation-middle particle-animation2 particle-animation-alternative" id="particle-6"></div>
+            
+            <div class="particle particle-big particle-animation-slow particle-animation3 particle-animation-alternative" id="particle-7"></div>
+
+            <form class="login-panel">
+                <h3 class="login-title">Авторизация</h3>
+                <input type="email" class="login-input" placeholder="Почта">
+                <input type="password" class="login-input" placeholder="Пароль">
+                <input type="submit" value="Войти" class="login-btn">
+                <span class="login-help-container">
+                    <span class="login-help-desc">Забыли пароль?</span>
+                    <a href="#" class="login-help-link">Восстановить пароль</a>
+                </span>
+                <span class="login-help-container">
+                    <span class="login-help-desc">Нет аккаунта?</span>
+                    <a href="#" class="login-help-link">Зарегистрироваться</a>
+                </span>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="social-networks-container">
+            <a href="" class="social-network-link" id="social-network-link-tg">
+                <svg class="social-network-link-img" id="social-network-link-img-tg" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M231.3,31.7A16.1,16.1,0,0,0,215,29L30.4,101.5a15.8,15.8,0,0,0-10.1,16.3,16,16,0,0,0,12.8,14.3L80,141.4V200a16,16,0,0,0,9.9,14.8A16.6,16.6,0,0,0,96,216a15.8,15.8,0,0,0,11.3-4.7l26-25.9L172.6,220a16,16,0,0,0,10.5,4,14.2,14.2,0,0,0,5-.8,15.9,15.9,0,0,0,10.7-11.6L236.4,47.4A16,16,0,0,0,231.3,31.7ZM183.2,208l-82.4-72.5L219.5,49.8Z"/></svg>
+            </a>
+
+            <a href="" class="social-network-link" id="social-network-link-vk">
+                <svg class="social-network-link-img" id="social-network-link-img-vk" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><path d="M484.7,132c3.56-11.28,0-19.48-15.75-19.48H416.58c-13.21,0-19.31,7.18-22.87,14.86,0,0-26.94,65.6-64.56,108.13-12.2,12.3-17.79,16.4-24.4,16.4-3.56,0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14,0-13.22,6.15-13.22,12.3,0,12.81,18.81,15.89,20.84,51.76V254c0,16.91-3,20-9.66,20-17.79,0-61-66.11-86.92-141.44C105,117.64,99.88,112,86.66,112H33.79C18.54,112,16,119.17,16,126.86c0,13.84,17.79,83.53,82.86,175.77,43.21,63,104.72,96.86,160.13,96.86,33.56,0,37.62-7.69,37.62-20.5V331.33c0-15.37,3.05-17.93,13.73-17.93,7.62,0,21.35,4.09,52.36,34.33C398.28,383.6,404.38,400,424.21,400h52.36c15.25,0,22.37-7.69,18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35,0-23.57-.51,0,63.55-91.22,70.15-122"/></svg>
+                </svg>
+            </a>
+
+            <a href="" class="social-network-link" id="social-network-link-email">
+                <svg class="social-network-link-img" id="social-network-link-img-email" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"/></svg>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

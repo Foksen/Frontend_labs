@@ -1,0 +1,73 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    margin: 0 10%;
+}
+
+.section-shop {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10%;
+}
+
+.catalog-title, .basket-title {
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+.catalog-goods-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.catalog-good-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+    outline: 1px solid #DDDDE9;
+    cursor: grabbing;
+    user-select: none;
+    background-color: white;
+}
+
+.catalog-good-card:hover {
+    outline: 1px solid black;
+}
+
+.catalog-good-card-img {
+    margin-bottom: 20px;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+}
+
+.catalog-good-card-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.catalog-good-card-price {
+    margin: 0;
+    font-size: 18px;
+}
+
+.basket-zone {
+    margin-bottom: 30px;
+    padding: 100px 0;
+    text-align: center;
+    color: #9898A0;
+    background-color: #F2F2F8;
+    outline: 2px solid #DDDDE9;
+}
+
+.basket-price {
+    font-size: 18px;
+}

@@ -1,0 +1,146 @@
+ * {
+    font-family: sans-serif;
+ }
+
+body { 
+    margin: 0;
+}
+
+.section-form {
+    margin: 50px auto 0;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #CCCED4;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-title {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.input-type1 {
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #CCCED4;
+    outline: none;
+}
+
+.captcha-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 24px;
+    border: 1px solid #CCCED4;
+    background-color: #EFF1F7;
+    user-select: none;
+}
+
+.captcha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-type1 {
+    padding: 12px 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #FE4B4B;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: filter 0.2s, background-color 0.2s;
+}
+
+.btn-type1:hover {
+    filter: brightness(0.9);
+}
+
+.btn-type1:active {
+    filter: brightness(0.8);
+}
+
+.btn-type1[disabled] {
+    background-color: #94969B;
+}
+
+.section-basket {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 50px auto 0;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #CCCED4;
+}
+
+.section-basket .section-title {
+    margin-bottom: 5px;
+}
+
+.basket-output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-cards {
+    margin: 50px 10%;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: 1px 1px 5px #00000027;
+}
+
+.card-title {
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+.card-image {
+    margin: 0 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.card-desc {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}

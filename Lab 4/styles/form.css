@@ -1,0 +1,99 @@
+/* --- FORM --- */
+
+form {
+    display: block;
+    background-color: white;
+    outline: 1px solid #ebebeb;
+}
+
+input, textarea, select {
+    margin: 0;
+    width: 100%;
+    font-size: 1em;
+    padding: 0.525em 1em;
+    border: 1px solid #ebebeb;
+    color: #004156;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 1px solid #004156;
+}
+
+input::placeholder, textarea::placeholder, select::placeholder {
+    color: #859094;
+    font-weight: 400;
+}
+
+input[type="file"] {
+    font-size: 0.875em;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: black;
+}
+
+input[type="CheckBox"], input[type="Radio"] {
+    width: auto;
+    outline: none;
+}
+
+input[type="CheckBox"] + label, input[type="Radio"] + label {
+    display: inline-block;
+    margin-left: 5px;
+    user-select: none;
+}
+
+fieldset {
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+}
+
+label {
+    color: #325561;
+}
+
+button, input[type="submit"] {
+    width: auto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #004156;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #002936;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: #001c25;
+}
+
+.form-line-container {
+    display: flex;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.form-line-container .input-container {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.form-line-container .input-container:last-child {
+    margin-right: 0;
+}
+
+.required {
+    color: red;
+}

@@ -1,0 +1,41 @@
+@import url(common.css);
+@import url(form.css);
+
+/* --- MAIN --- */
+
+main {
+    margin: 120px auto 0;
+    padding: 10px 0;
+    width: 1140px;
+}
+
+
+/* --- REGISTRATION --- */
+
+.registration-form {
+    margin: 50px auto 60px;
+    padding: 50px;
+    width: 700px;
+    outline: 1px solid #ebebeb;
+    border-radius: 30px;
+}
+
+.registration-form > * {
+    margin-bottom: 20px;
+}
+
+.registration-form > *:last-child {
+    margin-bottom: 0;
+}
+
+.registration-form > h2 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.registration-form input[type="Submit"] {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 30px;
+}

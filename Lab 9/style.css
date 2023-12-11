@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin-top: 150px;
+    width: 100%;
+}
+
+.buttons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+button {
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 179);
+    transition: all 0.2s;
+    user-select: none;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+button:active {
+    filter: brightness(0.8);
+    transform: scale(0.98);
+}
+
+.liked {
+    background-color: rgb(216, 64, 64);
+}
+
+.draw-elem {
+    position: absolute;
+    font-size: 36px;
+    z-index: -999;
+    cursor: default;
+    user-select: none;
+}

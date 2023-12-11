@@ -1,0 +1,137 @@
+@import url(general.css);
+
+.notifications-widget {
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    height: auto;
+    display: flex;
+    user-select: none;
+    z-index: 100;
+}
+
+.notifications-widget-content {
+    bottom: 100px;
+    width: 512px;
+    height: 100%;
+    outline: 1px solid #ebebeb;
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: white;
+    transition: visibility 0.2s linear, opacity 0.2s;
+}
+
+.notifications-title {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.notifications-widget-item {
+    margin-bottom: 5px;
+}
+
+.notifications-widget-icon {
+    width: 32px;
+    height: 32px;
+    fill: #FFFFFF;
+}
+
+.notifications-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 32px;
+    background: #32819b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s;
+}
+
+.notifications-widget-count {
+    position: absolute;
+    bottom: 52px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background: #004156;
+    border-radius: 16px;
+    transition: opacity 0.2s;
+}
+
+.notifications-btn:hover {
+    opacity: 0;
+}
+
+.notifications-btn:hover ~ .notifications-widget-count{
+    opacity: 0;
+}
+
+.notifications-widget-content {
+    display: none;
+    z-index: 100;
+}
+
+.notifications-btn:hover ~ .notifications-widget-content {
+    display: flex;
+}
+
+.notifications-widget-content:hover {
+    display: flex;
+}
+
+@media (max-width: 720px) {
+    .notifications-widget {
+        right: 30px;
+        bottom: 20px;
+    }
+
+    .notifications-widget-content {
+        width: 384px;
+        padding: 20px;
+    }
+
+    .notifications-btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 26px;
+    }
+
+    .notifications-widget-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .notifications-widget-count {
+        font-size: 14px;
+        bottom: 46px;
+        right: 0;
+        width: 26px;
+        height: 26px;
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 425px) {
+    .notifications-widget {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .notifications-widget-content {
+        width: 100%;
+        margin-left: 20px;
+    }
+}

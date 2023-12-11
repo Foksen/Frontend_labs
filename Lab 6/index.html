@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи DreamWorks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+    <header>
+        <input id="header-menu-cb" type="checkbox"></input>
+        <div id="header-top-container">
+            <svg id="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.25 25.78"><path id="H" class="cls-1" d="M20,35.6h-3.6V10.4H20Zm14.8-11.23H19.61V21.24H34.77Zm-.33-14H38V35.6h-3.6Z" transform="translate(-16.37 -10.11)"/><path id="E" class="cls-1" d="M56.4,32.47H71.09V35.6H52.8V10.4H70.59v3.13H56.4Zm-.32-11.2H69v3.06h-13Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M84.12,35.6V10.4H94a13.9,13.9,0,0,1,5.65,1,8,8,0,0,1,3.6,3,8.59,8.59,0,0,1,1.26,4.71,8.51,8.51,0,0,1-1.26,4.7,8.06,8.06,0,0,1-3.6,3,13.9,13.9,0,0,1-5.65,1H86.1l1.62-1.65V35.6Zm3.6-9L86.1,24.87h7.74a8,8,0,0,0,5.24-1.49,5.18,5.18,0,0,0,1.78-4.2A5.09,5.09,0,0,0,99.08,15a8,8,0,0,0-5.24-1.48H86.1l1.62-1.8Zm13.25,9-6.41-9.14h3.86l6.48,9.14Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M128.87,35.89a14.57,14.57,0,0,1-5.34-1,12.84,12.84,0,0,1-4.27-2.72,12.6,12.6,0,0,1-2.81-4.09,12.8,12.8,0,0,1-1-5.11,12.8,12.8,0,0,1,1-5.11,12.6,12.6,0,0,1,2.81-4.09,13,13,0,0,1,4.25-2.72,14.56,14.56,0,0,1,5.36-1,14.33,14.33,0,0,1,5.31,1,12.63,12.63,0,0,1,4.25,2.7,12.16,12.16,0,0,1,2.81,4.08,13.1,13.1,0,0,1,1,5.15,13.1,13.1,0,0,1-1,5.15,12.16,12.16,0,0,1-2.81,4.08,12.63,12.63,0,0,1-4.25,2.7A14.33,14.33,0,0,1,128.87,35.89Zm0-3.21a10.25,10.25,0,0,0,3.87-.72,9.17,9.17,0,0,0,3.1-2,9.55,9.55,0,0,0,2-3.08,10.39,10.39,0,0,0,0-7.7,9.55,9.55,0,0,0-2-3.08,9.17,9.17,0,0,0-3.1-2A10.84,10.84,0,0,0,125,14a9.3,9.3,0,0,0-5.19,5.11,10.39,10.39,0,0,0,0,7.7A9.3,9.3,0,0,0,125,32,10.29,10.29,0,0,0,128.87,32.68Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M154.94,35.6V10.4h10.62A15.45,15.45,0,0,1,172.67,12a11.76,11.76,0,0,1,4.78,4.43A12.54,12.54,0,0,1,179.16,23a12.54,12.54,0,0,1-1.71,6.59A11.76,11.76,0,0,1,172.67,34a15.45,15.45,0,0,1-7.11,1.58Zm3.6-3.13h6.8a11.65,11.65,0,0,0,5.42-1.19A8.62,8.62,0,0,0,174.3,28,9.59,9.59,0,0,0,175.56,23a9.56,9.56,0,0,0-1.26-5,8.71,8.71,0,0,0-3.54-3.31,11.65,11.65,0,0,0-5.42-1.19h-6.8Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M195.47,32.47h14.69V35.6H191.87V10.4h17.79v3.13H195.47Zm-.32-11.2h13v3.06h-13Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M230.54,35.89A17.42,17.42,0,0,1,225,35a11.29,11.29,0,0,1-4.14-2.29l1.33-2.81A11.62,11.62,0,0,0,225.89,32a13.33,13.33,0,0,0,4.65.83,10.37,10.37,0,0,0,3.56-.51,4.23,4.23,0,0,0,2-1.38,3.31,3.31,0,0,0,.64-2,2.75,2.75,0,0,0-.84-2.09,6.42,6.42,0,0,0-2.2-1.28,25.2,25.2,0,0,0-3-.84c-1.08-.24-2.16-.52-3.26-.85a14.56,14.56,0,0,1-3-1.24,6.07,6.07,0,0,1-2.18-2,5.92,5.92,0,0,1-.83-3.3,6.57,6.57,0,0,1,1-3.58,7.14,7.14,0,0,1,3.16-2.63,13.07,13.07,0,0,1,5.46-1,16.57,16.57,0,0,1,4.35.58,12.12,12.12,0,0,1,3.75,1.65l-1.19,2.88a11.46,11.46,0,0,0-3.42-1.56,13.11,13.11,0,0,0-3.49-.49,9.58,9.58,0,0,0-3.49.54,4.22,4.22,0,0,0-2,1.44,3.43,3.43,0,0,0-.63,2,2.77,2.77,0,0,0,.84,2.12,6.09,6.09,0,0,0,2.2,1.26,29.65,29.65,0,0,0,3,.85c1.08.25,2.17.53,3.26.84a14.09,14.09,0,0,1,3,1.23,6.08,6.08,0,0,1,2.17,2,5.73,5.73,0,0,1,.83,3.24,6.51,6.51,0,0,1-1,3.55A7.27,7.27,0,0,1,236,34.9,13.34,13.34,0,0,1,230.54,35.89Z" transform="translate(-16.37 -10.11)"/><path class="cls-1" d="M264,35.89a14.33,14.33,0,0,1-5.31-1,12.31,12.31,0,0,1-4.22-2.7,12.71,12.71,0,0,1-2.79-4.08,12.93,12.93,0,0,1-1-5.15,12.93,12.93,0,0,1,1-5.15,12.56,12.56,0,0,1,7-6.78,15.14,15.14,0,0,1,10.69,0,11,11,0,0,1,4.2,2.94l-2.34,2.26a9.57,9.57,0,0,0-3.24-2.25,10.12,10.12,0,0,0-3.86-.73,10.65,10.65,0,0,0-3.94.72,9.54,9.54,0,0,0-3.15,2A9.23,9.23,0,0,0,255,19.13a10.62,10.62,0,0,0,0,7.74A9.23,9.23,0,0,0,257.1,30a9.54,9.54,0,0,0,3.15,2,10.65,10.65,0,0,0,3.94.72,10.12,10.12,0,0,0,3.86-.73,9.29,9.29,0,0,0,3.24-2.29l2.34,2.27a11.2,11.2,0,0,1-4.2,3A14.2,14.2,0,0,1,264,35.89Z" transform="translate(-16.37 -10.11)"/><g id="Eye"><circle class="cls-1" cx="107.21" cy="12.45" r="1.57"/></g><g id="Eye-2" data-name="Eye"><circle class="cls-1" cx="118.09" cy="12.45" r="1.57"/></g><g id="Mask"><path class="cls-1" d="M135.78,19a2.54,2.54,0,0,1,2.16,1.32,4.3,4.3,0,0,1,0,4.64,2.54,2.54,0,0,1-2.16,1.32,2.91,2.91,0,0,1-1.55-.49,9.83,9.83,0,0,0-10.5,0,2.91,2.91,0,0,1-1.55.49A2.54,2.54,0,0,1,120,24.93a4.3,4.3,0,0,1,0-4.64A2.54,2.54,0,0,1,122.18,19a2.91,2.91,0,0,1,1.55.49,9.83,9.83,0,0,0,10.5,0,2.91,2.91,0,0,1,1.55-.49m0-2.5a5.39,5.39,0,0,0-2.89.88,7.33,7.33,0,0,1-7.82,0,5.39,5.39,0,0,0-2.89-.88,5,5,0,0,0-4.26,2.46,6.81,6.81,0,0,0,0,7.36,5,5,0,0,0,4.26,2.46,5.39,5.39,0,0,0,2.89-.88,7.33,7.33,0,0,1,7.82,0,5.39,5.39,0,0,0,2.89.88A5,5,0,0,0,140,26.29a6.81,6.81,0,0,0,0-7.36,5,5,0,0,0-4.26-2.46Z" transform="translate(-16.37 -10.11)"/></g></svg>
+            <label id="header-menu-label" for="header-menu-cb">
+                <div id="header-menu-btn"></div>
+            </label>
+        </div>        
+        <nav id="header-nav">
+            <ul id="header-nav-list">
+                <li class="header-nav-listitem"><a class="header-nav-link">Dreamworks</a></li><!--
+                --><li class="header-nav-listitem"><a class="header-nav-link" href="">Disney</a></li><!--
+                --><li class="header-nav-listitem"><a class="header-nav-link" href="">Illumination</a></li><!--
+                --><li class="header-nav-listitem"><a class="header-nav-link" href="">Pixar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="notifications-widget">
+        <button class="notifications-btn">
+            <svg class="notifications-widget-icon" data-name="Layer 1" viewBox="0 0 48 48"><title/><path d="M40.62,28.34l-.87-.7A2,2,0,0,1,39,26.08V18A15,15,0,0,0,26.91,3.29a3,3,0,0,0-5.81,0A15,15,0,0,0,9,18v8.08a2,2,0,0,1-.75,1.56l-.87.7a9,9,0,0,0-3.38,7V37a4,4,0,0,0,4,4h8.26a8,8,0,0,0,15.47,0H40a4,4,0,0,0,4-4V35.36A9,9,0,0,0,40.62,28.34ZM24,43a4,4,0,0,1-3.44-2h6.89A4,4,0,0,1,24,43Zm16-6H8V35.36a5,5,0,0,1,1.88-3.9l.87-.7A6,6,0,0,0,13,26.08V18a11,11,0,0,1,22,0v8.08a6,6,0,0,0,2.25,4.69l.87.7A5,5,0,0,1,40,35.36Z"/></svg>
+        </button>        
+        <div class="notifications-widget-count">3</div>
+
+        <div class="notifications-widget-content">
+            <h4 class="notifications-title">Уведомления</h4>
+            <p class="notifications-widget-item">
+                Пользователь <a class="notifications-link" href="#">Админ</a> оставил комментарий под вашей <a class="notifications-link" href="#">записью</a>
+            </p>
+            <p class="notifications-widget-item">
+                Пользователь <a class="notifications-link" href="#">Админ</a> поставил лайк под вашей <a class="notifications-link" href="#">записью</a>
+            </p>
+            <p class="notifications-widget-item">
+                Пользователь <a class="notifications-link" href="#">Кирюха1337</a> оставил комментарий под вашей <a class="notifications-link" href="#">записью</a>
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <aside class="aside-nav">
+            <nav>
+                <ul class="aside-films-list">
+                    <li>Шрек</li>
+                    <ul class="aside-heroes-list">
+                        <li><a href="#shrek-card">Шрек</a></li>
+                        <li><a href="#donkey-card">Осёл</a></li>
+                        <li><a href="#fiona-card">Принцесса Фиона</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </aside>
+        
+        <div>
+            <section class="company">
+                <h2>DreamWorks Pictures</h2>
+                <p><strong>DreamWorks Pictures</strong> — американская кинокомпания, занимающаяся разработкой, продюсированием и прокатом фильмов, мультфильмов, видеоигр и телепрограмм. Она спродюсировала более десятка фильмов, чьи кассовые сборы превысили отметку в 100 миллионов долларов.</p>
+                <aside id="img-katzenberg">
+                    <figure>
+                        <img src="images/Katzenberg.jpg" alt="Katzenberg">
+                        <figcaption>Джеффри Катценберг, основатель DreamWorks</figcaption>
+                    </figure>
+                </aside>
+                <p>История компании началась в 1994 году как амбициозная попытка Стивена Спилберга, Джеффри Катценберга и Дэвида Геффена (из фамилий которых сложена аббревиатура SKG в логотипе компании) создать новую голливудскую студию.</p>
+                <p>С 2004 года студия выпускает только мультфильмы, выполненные с помощью компьютерной анимации. С 2010 года студия выпускает всю свою продукцию в формате 3D.</p>
+                <p>В общей сложности компания выпустила 45 полнометражных мультфильмов, среди которых культовые франшизы «<em>Шрек»</em>, «<em>Мадагаскар</em>», «<em>Кунг-фу панда</em>» и «<em>Как приручить дракона</em>». С 2013 года подписано соглашение об эксклюзивной дистрибуции с кинокомпанией 20th Century Fox, сделка истекла в 2017 году.</p>
+
+                <figure class="company-figure-container">
+                    <video autoplay loop muted poster="images/dreamworks.jpg" class="company-intro">
+                        <source src="videos/Dreamworks Intro HD.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает встроенные видео!
+                    </video>
+                    <figcaption>Заставка компании DreamWorks</figcaption>
+                </figure>
+
+            </section>
+    
+            <section class="heroes-container">
+                <h2>Популярные персонажи</h2>
+                
+                <article class="hero-card" id="shrek-card">
+                    <div class="hero-text-container">
+                        <h3 class="hero-name">Шрек</h3>
+                        <div class="hero-desc">
+                            <p>Шрек (англ. <i>Shrek</i>) — заглавный герой одноимённой серии фильмов и игр, это огромный зелёный огр, который живёт на болоте, в окрестностях города-государства Дюлок, населённого людьми, животными, куклами и др. из разных европейских сказок и легенд.</p>
+                            <p>Людей он, по доброте душевной, не ест, но его самолюбие греет тот факт, что при виде него все бросаются врассыпную.</p>
+                        </div>
+                    </div>
+
+                    <aside class="hero-img-container">
+                        <img src="images/heroes/shrek.jpg" alt="Shrek" class="hero-img">
+                    </aside>
+                </article>
+
+                <article class="hero-card" id="donkey-card">
+                    <div class="hero-text-container">
+                        <h3 class="hero-name">Осёл</h3>
+                        <div class="hero-desc">
+                            <p>Осёл (англ. <i>Donkey</i>) — персонаж фильмов и игр, первый и самый лучший друг Шрека, муж Драконихи и отец Драконоосликов.</p>
+                            <p>Непонятно, как Осёл научился говорить, но есть теория, что его мать жила в обществе людей и научилась произносить слова. Затем, родив Осла, она научила его говорить, а вскоре его продали старухе.</p>
+                        </div>
+                    </div>
+
+                    <aside class="hero-img-container">
+                        <img src="images/heroes/donkey.png" alt="Donkey" class="hero-img">
+                    </aside>
+                </article>
+
+                <article class="hero-card" id="fiona-card">
+                    <div class="hero-text-container">
+                        <h3 class="hero-name">Принцесса Фиона</h3>
+                        <div class="hero-desc">
+                            <p>Принцесса Фиона (англ. <i>Princess Fiona</i>) — супруга Шрека c первой части, жена со второй и мать трёх маленьких огриков. Также она принцесса Тридевятого королевства, дочь короля Гарольда и королевы Лиллиан.</p>
+                            <p>В совершенстве владеет боевыми искусствами; вполне вероятно, что эти навыки ей достались от матери, королевы Лиллиан. В «Шрек Навсегда» она была главным командиром огров против Румпельштицхена.</p>
+                        </div>
+                    </div>
+
+                    <aside class="hero-img-container">
+                        <img src="images/heroes/fiona.png" alt="Princess Fiona" class="hero-img">
+                    </aside>
+                </article>
+
+            </section>
+        
+            <section class="gift-container">
+                <h2>Открытка с персонажем</h2>
+                <p class="gift-desc">Заполните небольшую форму и отправьте своему лучшему другу на почту памятную открытку с его любимым персонажем!</p>
+
+                <div class="gift-card">
+                    <form class="gift-form" action="" method="get">
+                        <span class="form-line-container">
+                            <div class="input-container">
+                                <input type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    minlength="2"
+                                    maxlength="32"
+                                    placeholder="Иван"
+                                    autocomplete="on"
+                                    spellcheck="false">
+                                <label for="name">Имя</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text"
+                                    id="surname"
+                                    name="surname"
+                                    required
+                                    minlength="2"
+                                    maxlength="32"
+                                    placeholder="Иванов"
+                                    autocomplete="on"
+                                    spellcheck="false">
+                                <label for="surname">Фамилия</label>
+                            </div>
+                        </span>
+
+                        <div class="input-container">
+                            <select 
+                                id="heroSelect" 
+                                name="heroSelect" 
+                                required>
+                                <option value="" disabled>-- Выберите персонажа --</option>
+                                <option value="Shrek">Шрек</option>
+                                <option value="Fiona">Фиона</option>
+                                <option value="Donkey">Осёл</option>
+                            </select>
+                            <label for="heroSelect">Персонаж</label>
+                        </div>
+
+                        <div class="input-container">
+                            <textarea 
+                                id="wish" 
+                                name="wish" 
+                                required
+                                minlength="20"
+                                maxlength="128"
+                                placeholder="Желаю тебе всего наилучшего!"></textarea>
+                            <label for="wish">Пожелание</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="address@gmail.com"
+                                autocomplete="email">
+                            <label for="email">Почта</label>
+                        </div>                        
+
+                        <span class="form-line-container">
+                            <div class="input-container">
+                                <input type="file" 
+                                    id="file" 
+                                    name="file"
+                                    accept="image/*">
+                                <label for="file">Своя картинка</label>
+                            </div>
+                            <button name="button" type="submit">Отправить</button>
+                        </span>
+                    </form>
+                </div>
+            </section>
+        
+            <section class="gallery-section">
+                <h2>Галерея</h2>
+                <div class="gallery">
+                    <div class="gallery-col">
+                        <figure class="gallery-card">
+                            <img src="images/gallery/0.jpg" alt="0" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек</figcaption>
+                        </figure>
+
+                        <figure class="gallery-card">
+                            <img src="images/gallery/1.jpg" alt="1" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек</figcaption>
+                        </figure>
+    
+                        <figure class="gallery-card">
+                            <img src="images/gallery/2.jpg" alt="2" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек и осёл<figcaption>
+                        </figure>
+
+                        <figure class="gallery-card">
+                            <img src="images/gallery/3.jpg" alt="3" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек, осёл и кот</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery-col">
+                        <figure class="gallery-card">
+                            <img src="images/gallery/5.jpg" alt="5" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Принцесса Фиона</figcaption>
+                        </figure>
+    
+                        <figure class="gallery-card">
+                            <img src="images/gallery/6.jpg" alt="6" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек с детьми</figcaption>
+                        </figure>
+    
+                        <figure class="gallery-card">
+                            <img src="images/gallery/7.jpg" alt="7" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек с ребёнком</figcaption>
+                        </figure>
+    
+                        <figure class="gallery-card">
+                            <img src="images/gallery/8.jpg" alt="8" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Котик в сапожках</figcaption>
+                        </figure>
+
+                        <figure class="gallery-card">
+                            <img src="images/gallery/4.jpg" alt="4" class="gallery-card-img">
+                            <figcaption class="gallery-card-title">Шрек и осёл</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="others-section">
+                <h2>Другие фильмы</h2>
+                
+                <div class="others">
+                    <figure class="others-card">
+                        <div class="others-card-content">
+                            <h3 class="others-card-title">Шрек</h3>
+                            <p class="others-card-desc">Мультфильм "Шрек"</p>
+                            <button class="custom-button custom-button-shrek others-card-btn">Смотреть</button>
+                        </div>
+                        <img src="images/others/shrek.jpg" alt="shrek" class="others-card-img">
+                    </figure>
+    
+                    <figure class="others-card">
+                        <div class="others-card-content">
+                            <h3 class="others-card-title">Как приручить дракона</h3>
+                            <p class="others-card-desc">Мультфильм "Как приручить дракона"</p>
+                            <button class="custom-button custom-button-dragon others-card-btn">Смотреть</button>
+                        </div>
+                        <img src="images/others/dragon.jpg" alt="dragon" class="others-card-img">
+                    </figure>
+    
+                    <figure class="others-card">
+                        <div class="others-card-content">
+                            <h3 class="others-card-title">Кунг-фу панда</h3>
+                            <p class="others-card-desc">Мультфильм "Кунг-фу панда"</p>
+                            <button class="custom-button custom-button-panda others-card-btn">Смотреть</button>
+                        </div>
+                        <img src="images/others/panda.jpg" alt="panda" class="others-card-img">
+                    </figure>
+    
+                    <figure class="others-card">
+                        <div class="others-card-content">
+                            <h3 class="others-card-title">Мадагаскар</h3>
+                            <p class="others-card-desc">Мультфильм "Мадагаскар"</p>
+                            <button class="custom-button custom-button-madagascar others-card-btn">Смотреть</button>
+                        </div>
+                        <img src="images/others/madagascar.jpg" alt="madagascar" class="others-card-img">
+                    </figure>
+                </div>
+            </section>
+        </div>    
+    </main>
+    
+    <footer>
+        <address id="footer-address">
+            <h4 id="footer-title">Контакты</h4>
+            <span class="footer-address-item">Почта: <a class="footer-address-link" href="mailto:izholobov2004@gmail.com" title="Отправить email">izholobov2004@gmail.com</a></span>
+            <span class="footer-address-item">Телефон: <a class="footer-address-link" href="tel:89535516366" title="Позвонить">+7 (953) 551-63-66</a></span>
+        </address>
+        <small id="footer-copyright">© Lol, letter c in a circle</small>
+    </footer>
+</body>
+</html>

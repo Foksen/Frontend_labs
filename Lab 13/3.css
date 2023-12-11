@@ -1,0 +1,32 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8000px;
+    background-image: url("parallax.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+.text-container {
+    margin: 400px 10%;
+}
+
+h1 {
+    margin-bottom: 1000px;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+
+h1:last-of-type {
+    margin-bottom: 0;
+}

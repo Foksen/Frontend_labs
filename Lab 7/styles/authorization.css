@@ -1,0 +1,272 @@
+@import url(general/general.css);
+
+.login-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px 50px;
+    width: 500px;
+    background-color: #231d2579;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px 2px #00000036;
+}
+
+.login-title {
+    position: relative;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: var(--white-color);
+}
+
+.login-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--white-color);
+}
+
+.login-input {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    background: #3b353f;
+    outline: none;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.login-input:focus {
+    background: #49424e;
+}
+
+.login-input::placeholder {
+    color: var(--gray-500);
+}
+
+.login-btn {
+    margin: 15px auto 25px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-color);
+    background: var(--main-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.login-btn:hover {
+    filter: brightness(0.93);
+}
+
+.login-btn:active {
+    filter: brightness(0.86);
+    transform: scale(0.97);
+}
+
+.login-help-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.login-help-container:last-child {
+    margin-bottom: 0;
+}
+
+.login-help-desc {
+    color: var(--gray-600);
+    font-weight: 500;
+}
+
+.login-help-link {
+    color: var(--main-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-help-link:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .login-panel {
+        margin: 0 20px;
+        padding: 40px 20px;
+        width: auto;
+    }
+
+    .login-help-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-help-container {
+        margin-bottom: 15px;
+    }
+}
+
+.particle {
+    position: absolute;
+    background-color: #645d6871;
+    animation-iteration-count: infinite;
+}
+
+.particle-small {
+    width: 50px;
+    height: 50px;
+}
+
+.particle-medium {
+    width: 85px;
+    height: 85px;
+}
+
+.particle-big {
+    width: 120px;
+    height: 120px;
+}
+
+.particle-animation-fast {
+    animation-duration: 30s;
+}
+
+.particle-animation-middle {
+    animation-duration: 45s;
+}
+
+.particle-animation-slow {
+    animation-duration: 60s;
+}
+
+.particle-animation1 {
+    animation-name: particles-animation1;
+}
+
+.particle-animation2 {
+    animation-name: particles-animation2;
+}
+
+.particle-animation3 {
+    animation-name: particles-animation3;
+}
+
+.particle-animation-alternative {
+    animation-direction: alternate;
+}
+
+@keyframes particles-animation1 {
+    0%, 100% {
+        top: var(--var-top);
+        right: var(--var-right);
+        transform: scale(1);
+    }
+    25% {
+        top: calc(var(--var-top) / 1.7);
+        right: calc(var(--var-right) * 1.3);
+        transform: scale(1.2);
+    }
+    50% {
+        top: calc(var(--var-top) * 1.5);
+        right: calc(var(--var-right) / 1.8);
+        transform: scale(0.7);
+    }
+    75% {
+        top: calc(var(--var-top) / 3);
+        right: calc(var(--var-right) * 1.5);
+        transform: scale(0.85);
+    }
+}
+
+@keyframes particles-animation2 {
+    0%, 100% {
+        top: var(--var-top);
+        right: var(--var-right);
+        transform: scale(1);
+    }
+    25% {
+        top: calc(var(--var-top) * 1.7);
+        right: calc(var(--var-right) / 1.4);
+        transform: scale(0.7);
+    }
+    50% {
+        top: calc(var(--var-top) / 1.5);
+        right: calc(var(--var-right) * 1.7);
+        transform: scale(1.2);
+    }
+    75% {
+        top: calc(var(--var-top) / 1.8);
+        right: calc(var(--var-right) * 1.2);
+        transform: scale(0.85);
+    }
+}
+
+@keyframes particles-animation3 {
+    0%, 100% {
+        top: var(--var-top);
+        right: var(--var-right);
+        transform: scale(1);
+    }
+    25% {
+        top: calc(var(--var-top) / 1.5);
+        right: calc(var(--var-right) * 1.1);
+        transform: scale(1.5);
+    }
+    50% {
+        top: calc(var(--var-top) * 1.2);
+        right: calc(var(--var-right) / 1.2);
+        transform: scale(1.2);
+    }
+    75% {
+        top: calc(var(--var-top) / 1.2);
+        right: calc(var(--var-right) * 1.7);
+        transform: scale(0.8);
+    }
+}
+
+#particle-1 {
+    --var-top: 30%;
+    --var-right: 20%;
+}
+
+#particle-2 {
+    --var-top: 20%;
+    --var-right: 50%;
+}
+
+#particle-3 {
+    --var-top: 10%;
+    --var-right: 50%;
+}
+
+#particle-4 {
+    --var-top: 40%;
+    --var-right: 30%;
+}
+
+#particle-5 {
+    --var-top: 50%;
+    --var-right: 40%;
+}
+
+#particle-6 {
+    --var-top: 50%;
+    --var-right: 50%;
+}
+
+#particle-7 {
+    --var-top: 60%;
+    --var-right: 50%;
+}

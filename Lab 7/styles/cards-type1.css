@@ -1,0 +1,146 @@
+@import url(general/general.css);
+
+.card-type1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+}
+
+.card-type1::before, .card-type1::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: #19131d54;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: -1;
+    transition: visibility 1s, opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-type1::before {
+    top: 0;
+    left: 0;
+}
+
+.card-type1::after {
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes card-type1-before {
+    0%, 100% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 20px;
+        left: calc(100% - 60px);
+    }
+}
+
+@keyframes card-type1-after {
+    0%, 100% {
+        bottom: 0;
+        right: 0;
+    }
+    50% {
+        bottom: 20px;
+        right: calc(100% - 60px);
+    }
+}
+
+.card-type1:hover::before, .card-type1:hover::after {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-type1:hover::before {
+    animation-name: card-type1-before;
+}
+
+.card-type1:hover::after {
+    animation-name: card-type1-after;
+}
+
+.card-type1-bg {
+    position: absolute;
+    left: 35%;
+    width: 30%;
+    height: 100%;
+    transform: skew(-15deg);
+    background: red;
+    z-index: -5;
+    transition: transform 1s;
+}
+
+.card-type1-bg::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -6;
+    filter: blur(20px);
+}
+
+.card-type1:hover .card-type1-bg {
+    transform: skew(0);
+}
+
+.card-type1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 30px;
+    background: #68626d54;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 2;
+    transition: background-color 0.2s;
+}
+
+.card-type1:hover .card-type1-content {
+    background: #19131d54;
+}
+
+.card-type1-title {
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+.card-type1-desc {
+    margin: 5px 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-100);
+}
+
+.card-type1-btn {
+    padding: 10px 0;
+    font-weight: 600;
+    color: var(--gray-900);
+    background-color: var(--white-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.05s;
+}
+
+.card-type1-btn:hover {
+    filter: brightness(0.9);
+}
+
+.card-type1-btn:active {
+    transform: scale(0.97);
+    filter: brightness(0.8);
+}

@@ -1,0 +1,17 @@
+:root {
+    --white-color: #FFFFFF;
+    --main-color: #8b2ed1;
+    --green-color: #2de47f;
+    --pink-color: #e63570;
+    --blue-color: #2e46d1;
+    --gray-50: #f6f4f8;
+    --gray-100: #e8e5eb;
+    --gray-200: #dedae0;
+    --gray-300: #ccc7cf;
+    --gray-400: #b4afb8;
+    --gray-500: #8f8994;
+    --gray-600: #665f6b;
+    --gray-700: #49424e;
+    --gray-800: #302935;
+    --gray-900: #1a131f;
+}
